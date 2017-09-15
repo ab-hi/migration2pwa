@@ -26,18 +26,18 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('the-magic-cache').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/dragon.html',
-        '/faq.html',
-        '/manifest.json',
-        '/background.jpeg',
-        '/construction.gif',
-        '/dragon.png',
-        '/logo.png',
-        '/site.js',
-        '/dragon.js',
-        '/styles.css',
+       '/migration2pwa',
+        '/migration2pwa/index.html',
+        '/migration2pwa/dragon.html',
+        '/migration2pwa/faq.html',
+        '/migration2pwa/manifest.json',
+        '/migration2pwa/background.jpeg',
+        '/migration2pwa/construction.gif',
+        '/migration2pwa/dragon.png',
+        '/migration2pwa/logo.png',
+        '/migration2pwa/site.js',
+        '/migration2pwa/dragon.js',
+        '/migration2pwa/styles.css',
       ]);
     })
   );
